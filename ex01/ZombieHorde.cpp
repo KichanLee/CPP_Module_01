@@ -1,42 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   ZombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 13:36:32 by kichlee           #+#    #+#             */
-/*   Updated: 2023/11/22 14:03:30 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/11/22 21:54:23 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
+int resum(int n)
+{
+    int x = 3;
+
+    return (x);
+}
 Zombie* zombieHorde( int N, std::string name )
 {
 
-    // 생성자 사용하여 입력하는 방법
+    // 생성자 사용하여  방법
     Zombie* zomibes = new Zombie[N];
 
     for(int i = 0; i < N; ++i)
     {
-        zomibes[i] = new Zomibe(name);
+        zombies->
     }
     
+}
 
-    // 생성자 없이 입력하는 방법
-    Zombie* zzb = new Zombie[N];
-    
-    for(int i = 0; i < N; ++i)
-    {
-        zzb->Zomibe[i].name = name;
-    }
+int* test(char const *argv[]) {
+    int test[3] = {1, 2, 3};
+    // int *test[3];
 
-    // Zombie* zzb;
-    // for(int i = 0; i < N; ++i)
-    // {
-    //     zzb[i] = new Zombie(name);
-    // }
+    return test;
+}
 
-    // return (zzb);
+int main(int argc, char const *argv[])
+{
+    /* code */
+    return 0;
 }

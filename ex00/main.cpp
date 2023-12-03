@@ -1,7 +1,23 @@
-#include "Zomibe.hpp"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/03 16:10:58 by kichlee           #+#    #+#             */
+/*   Updated: 2023/12/03 16:48:28 by kichlee          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Zombie.hpp"
 
 int main()
 {
-    Zombie  zb("Foo");
-    Zombie* zb_two = new Zombie("zz");
+    RandomChump("Foo");
+    
+    Zombie *zb = make_zombie("Foo");
+    zb->announce();
+    
+    delete zb;
 }

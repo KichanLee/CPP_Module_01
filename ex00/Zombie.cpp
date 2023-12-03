@@ -6,11 +6,11 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 13:02:17 by kichlee           #+#    #+#             */
-/*   Updated: 2023/11/22 13:25:10 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/03 16:37:29 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zomibe.hpp"
+#include "Zombie.hpp"
 
 Zombie::Zombie(std::string name)
 {
@@ -22,8 +22,7 @@ Zombie::~Zombie()
 	std::cout << "destuctor call!" << std::endl;
 }
 
-void	Zombie::announce(void)
+void Zombie::announce(void)
 {
-	std::cout << "BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << zobie_name << ": BraiiiiiiinnnzzzZ..."<< std::endl;
 }
-

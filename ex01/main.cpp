@@ -6,13 +6,15 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 13:37:14 by kichlee           #+#    #+#             */
-/*   Updated: 2023/11/22 13:59:14 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/03 17:24:32 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zomibe.hpp"
+#include "Zombie.hpp"
 
 int main()
-{
-        
+{   
+    Zombie  *zb = zombieHorde(4, "Foo");
+
+    delete  []zb;
 }

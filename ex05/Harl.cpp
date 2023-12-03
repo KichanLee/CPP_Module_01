@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kichan <kichan@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 21:11:07 by kichan            #+#    #+#             */
-/*   Updated: 2023/12/01 23:11:20 by kichan           ###   ########.fr       */
+/*   Updated: 2023/12/03 14:43:44 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ Harl::Harl()
     strarray[1] = "INFO";
     strarray[2] = "WARNING";
     strarray[3] = "ERROR";
-
 }
 
 Harl::~Harl()
@@ -54,8 +53,6 @@ void    Harl::complain(std::string level)
     for(int i = 0; i < 4; i++)
     {
         if(level == strarray[i])
-        {
             (this->*SetfuncPtr_list[i])();
-        }
     }
 }

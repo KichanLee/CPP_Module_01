@@ -6,11 +6,11 @@
 #    By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 13:53:49 by kichlee           #+#    #+#              #
-#    Updated: 2023/11/22 14:18:57 by kichlee          ###   ########.fr        #
+#    Updated: 2023/12/03 17:21:18 by kichlee          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	a.out
+NAME	=	brain
 CC		=	c++ 
 CFLAGS	=	-Wall -Wextra -Werror -std=c++98
 RM		=	rm -rf

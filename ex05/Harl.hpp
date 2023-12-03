@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kichan <kichan@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 21:08:08 by kichan            #+#    #+#             */
-/*   Updated: 2023/12/01 23:07:23 by kichan           ###   ########.fr       */
+/*   Updated: 2023/12/03 14:43:49 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ private:
     void        error(void);
     void        (Harl::*SetfuncPtr_list[4])(void);
     std::string strarray[4];
+
 public:
     Harl();
     ~Harl();

@@ -6,17 +6,15 @@
 #    By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 13:53:49 by kichlee           #+#    #+#              #
-#    Updated: 2023/12/03 17:04:03 by kichlee          ###   ########.fr        #
+#    Updated: 2023/11/22 14:18:57 by kichlee          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	ZombieHorde
+NAME	=	a.out
 CC		=	c++ 
 CFLAGS	=	-Wall -Wextra -Werror -std=c++98
 RM		=	rm -rf
-SRCS	=	Zombie.cpp \
-			ZombieHorde.cpp \
-			main.cpp
+SRCS	=	main.cpp
 OBJS	=	${SRCS:.c=.o}
 
 all	:

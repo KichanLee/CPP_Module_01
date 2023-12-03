@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/03 16:03:00 by kichlee           #+#    #+#             */
-/*   Updated: 2023/12/03 16:48:23 by kichlee          ###   ########.fr       */
+/*   Created: 2023/12/03 14:55:11 by kichlee           #+#    #+#             */
+/*   Updated: 2023/12/03 15:16:16 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// heap
-#include "Zombie.hpp"
+#include "Harl.hpp"
 
-Zombie* make_zombie(std::string name)
+int main(int ac, char *av[])
 {
-    Zombie  *zb_two = new Zombie(name);   
+    Harl hl;
     
-    return (zb_two);
+    if(ac == 2)
+        hl.filter(av[1]);
+
 }

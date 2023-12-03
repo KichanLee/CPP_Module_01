@@ -1,31 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zomibe.hpp                                         :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/22 13:29:56 by kichlee           #+#    #+#             */
-/*   Updated: 2023/11/22 13:29:57 by kichlee          ###   ########.fr       */
+/*   Created: 2023/12/01 21:08:08 by kichan            #+#    #+#             */
+/*   Updated: 2023/12/03 15:08:49 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
+#ifndef HARL_HPP
+#define HARL_HPP
 
-#include <iostream>
 #include <string>
+#include <iostream>
 
-class Zombie
+class Harl
 {
+
 private:
-	std::string zobie_name;
+    void        debug(void);
+    void        info(void);
+    void        warning(void);
+    void        error(void);
+    void        (Harl::*SetfuncPtr_list[4])(void);
+    std::string strarray[4];
 
 public:
-	Zombie(std::string name);
-	~Zombie();
-
-	void	announce(void);
+    Harl();
+    ~Harl();
+    void    complain(std::string level);
+    void    filter(std::string level);
 };
 
 #endif

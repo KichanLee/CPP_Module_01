@@ -1,21 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/03 16:03:00 by kichlee           #+#    #+#             */
-/*   Updated: 2023/12/03 16:48:23 by kichlee          ###   ########.fr       */
+/*   Created: 2023/11/22 13:29:56 by kichlee           #+#    #+#             */
+/*   Updated: 2023/12/03 16:33:32 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// heap
-#include "Zombie.hpp"
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
-Zombie* make_zombie(std::string name)
+#include <iostream>
+#include <string>
+
+class Zombie
 {
-    Zombie  *zb_two = new Zombie(name);   
-    
-    return (zb_two);
-}
+private:
+	std::string zobie_name;
+
+public:
+	Zombie(std::string name);
+	~Zombie();
+
+	void	announce(void);
+};
+Zombie* make_zombie(std::string name);	
+void	RandomChump(std::string name);
+
+#endif

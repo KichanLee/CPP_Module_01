@@ -6,7 +6,7 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 13:37:14 by kichlee           #+#    #+#             */
-/*   Updated: 2023/12/03 17:24:32 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/03 18:52:08 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main()
 {   
-    Zombie  *zb = zombieHorde(4, "Foo");
+    Zombie  *zb = zombieHorde(Zombie::HordeSize, "Foo");
 
     delete  []zb;
 }

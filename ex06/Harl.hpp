@@ -6,7 +6,7 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 21:08:08 by kichan            #+#    #+#             */
-/*   Updated: 2023/12/03 15:08:49 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/03 19:02:18 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ private:
 public:
     Harl();
     ~Harl();
-    void    complain(std::string level);
     void    filter(std::string level);
 };
 

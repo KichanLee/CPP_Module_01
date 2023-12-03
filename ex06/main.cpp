@@ -6,7 +6,7 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 14:55:11 by kichlee           #+#    #+#             */
-/*   Updated: 2023/12/03 15:16:16 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/03 19:02:00 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,7 @@ int main(int ac, char *av[])
     
     if(ac == 2)
         hl.filter(av[1]);
+    else
+        std::cout << "Argument Error!" << std::endl;
 
 }

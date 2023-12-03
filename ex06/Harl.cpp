@@ -6,7 +6,7 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 21:11:07 by kichan            #+#    #+#             */
-/*   Updated: 2023/12/03 18:37:22 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/03 18:59:41 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void    Harl::error(void)
 
 void    Harl::filter(std::string level)
 {
-    int num = 0;
+    int num = 5;
     
     for(int i = 0; i < 4 ; ++i)
     {

@@ -6,13 +6,13 @@
 #    By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 13:53:49 by kichlee           #+#    #+#              #
-#    Updated: 2023/12/03 16:49:01 by kichlee          ###   ########.fr        #
+#    Updated: 2023/12/03 18:39:42 by kichlee          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	Zombie
-CC		=	c++ 
-CFLAGS	=	-Wall -Wextra -Werror -std=c++98
+CXX		=	c++ 
+CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 RM		=	rm -rf
 SRCS	=	Zombie.cpp \
 			newZombie.cpp \
@@ -24,10 +24,10 @@ all	:
 	@$(MAKE)  $(NAME)
 
 $(NAME) : $(OBJS)
-	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+	@$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
 %.o : %.c
-	@$(CC) $(CFLAGS) -c $< -o $@
+	@$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean :
 	@$(RM)

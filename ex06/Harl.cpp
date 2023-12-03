@@ -6,7 +6,7 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 21:11:07 by kichan            #+#    #+#             */
-/*   Updated: 2023/12/03 15:40:13 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/03 18:37:22 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,10 +66,13 @@ void    Harl::filter(std::string level)
     {
         case 0 :
             (this->*SetfuncPtr_list[0])();
+            __attribute__((fallthrough));
         case 1 :
             (this->*SetfuncPtr_list[1])();
+            __attribute__((fallthrough));
         case 2 :
             (this->*SetfuncPtr_list[2])();
+            __attribute__((fallthrough));
         case 3 :
             (this->*SetfuncPtr_list[3])();
             break;

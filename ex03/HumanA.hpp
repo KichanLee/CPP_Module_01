@@ -6,7 +6,7 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 14:56:20 by kichlee           #+#    #+#             */
-/*   Updated: 2023/11/22 15:56:31 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/03 17:53:38 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@
 
 class HumanA
 {
-private:
-    std::string name;
-    Weapon& wp;
+    private:
+        std::string name;
+        Weapon& wp;
     
-public:
-    HumanA(std::string name, Weapon& wp);
-    ~HumanA();
+    public:
+        HumanA(std::string h_name, Weapon& wp_refer);
+        ~HumanA();
 
-    void    attack();
+        void    attack();
 
 };
 

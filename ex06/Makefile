@@ -6,11 +6,11 @@
 #    By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 13:53:49 by kichlee           #+#    #+#              #
-#    Updated: 2023/12/03 15:58:39 by kichlee          ###   ########.fr        #
+#    Updated: 2023/12/03 18:00:52 by kichlee          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	a.out
+NAME	=	Harlfilter
 CC		=	c++ 
 CFLAGS	=	-Wall -Wextra -Werror -std=c++98
 RM		=	rm -rf

@@ -6,7 +6,7 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 15:18:05 by kichlee           #+#    #+#             */
-/*   Updated: 2023/11/22 16:04:20 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/03 17:56:28 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@
 
 class HumanB
 {
-private:
-    std::string name;
-    Weapon* wp;
+    private:
+        std::string name;
+        Weapon* wp;
     
-public:
-    HumanB(std::string name) : name(name), wp(nullptr){}
-    ~HumanB();
-    void    setWeapon(Weapon& newWeapon);
-    void    attack();
+    public:
+        HumanB(std::string h_name);
+        ~HumanB();
+        void    setWeapon(Weapon& newWeapon);
+        void    attack();
 };
 
 

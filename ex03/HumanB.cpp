@@ -6,12 +6,18 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 15:18:05 by kichlee           #+#    #+#             */
-/*   Updated: 2023/11/22 16:06:31 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/03 18:00:06 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "HumanB.hpp"
+
+HumanB::HumanB(std::string h_name) : wp(nullptr) {
+    this->name = h_name;
+}
+
+
 
 HumanB::~HumanB()
 {

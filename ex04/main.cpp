@@ -6,7 +6,7 @@
 /*   By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 15:15:12 by kichlee           #+#    #+#             */
-/*   Updated: 2023/12/04 15:27:50 by kichlee          ###   ########.fr       */
+/*   Updated: 2023/12/04 15:39:36 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,16 @@ int main(int ac, const char *av[]) {
     }
 
     std::string filename = av[1];
+    filename.c_str();
     std::string newfile = av[1];
+    newfile.c_str();
     newfile.insert(newfile.size(),".replace");
 
     std::cout << newfile << std::endl;
     std::string toFind = av[2];
+    toFind.c_str();
     std::string toAlter = av[3];
+    toAlter.c_str();
     std::string text;
     size_t count = 0;
 
@@ -53,7 +57,6 @@ int main(int ac, const char *av[]) {
         pos = text.find(toFind, pos + toAlter.size());
     }
     std::ofstream file(newfile, std::ios::out);
-    in.close();
     if(file.is_open())
     {
         file << text;

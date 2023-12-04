@@ -6,16 +6,16 @@
 #    By: kichlee <kichlee@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 13:53:49 by kichlee           #+#    #+#              #
-#    Updated: 2023/12/04 17:33:00 by kichlee          ###   ########.fr        #
+#    Updated: 2023/12/04 17:34:40 by kichlee          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	harlFilter
+NAME		=	Sed
 CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 RM			=	rm -rf
 SRCS		=	main.cpp \
-				Harl.cpp 
+				FileReplace.cpp
 OBJS		=	${SRCS:.c=.o}
 
 all	:
